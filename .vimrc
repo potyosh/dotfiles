@@ -8,6 +8,7 @@ set cursorline
 highlight CursorLine cterm=NONE ctermfg=white ctermbg=black
 highlight CursorLine gui=NONE guifg=white guibg=black
 set number
+set clipboard=unnamed
 
 "NeoBundle Scripts-----------------------------
 if &compatible
