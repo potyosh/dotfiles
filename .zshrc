@@ -10,3 +10,6 @@ zstyle :compinstall filename '/Users/yoshwata/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+# Alias configuration
+alias ls='ls -laghFG'
