@@ -12,7 +12,9 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# Path settings
 USER_BIN=~/bin
 export PATH=$USER_BIN:$PATH
+
 # Alias configuration
 alias ls='ls -laghFG'
