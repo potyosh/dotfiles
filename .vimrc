@@ -1,3 +1,4 @@
+" Basic settings
 set backspace=start,eol,indent
 syntax on
 set autoindent
@@ -34,11 +35,16 @@ NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'bronson/vim-trailing-whitespace'
 
+" Color settings
+NeoBundle 'altercation/vim-colors-solarized'
+
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 
 " Required:
 call neobundle#end()
+set background=dark
+colorscheme solarized
 
 " Required:
 filetype plugin indent on
