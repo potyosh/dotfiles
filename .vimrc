@@ -10,7 +10,10 @@ highlight CursorLine cterm=NONE ctermfg=white ctermbg=black
 highlight CursorLine gui=NONE guifg=white guibg=black
 set number
 set clipboard=unnamed
+
+" ctag settings
 set tag=tags
+let g:auto_ctags = 1
 
 "NeoBundle Scripts-----------------------------
 if &compatible
