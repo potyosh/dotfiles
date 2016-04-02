@@ -9,7 +9,7 @@ bindkey -e
 zstyle :compinstall filename '/Users/yoshwata/.zshrc'
 
 autoload -Uz compinit
-compinit
+compinit -i
 # End of lines added by compinstall
 
 # Path settings
