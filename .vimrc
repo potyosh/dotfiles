@@ -41,6 +41,7 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'soramugi/auto-ctags.vim'
+NeoBundle 'Shougo/vimfiler.vim'
 
 " Color settings
 NeoBundle 'altercation/vim-colors-solarized'
