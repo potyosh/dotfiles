@@ -1,3 +1,6 @@
+# Prompt
+export PS1="\W $"
+
 # Android
 ANDROID_PRATFORM_TOOLS="/Users/yoshi/Library/Android/sdk/platform-tools"
 PATH=$PATH:$ANDROID_PRATFORM_TOOLS
