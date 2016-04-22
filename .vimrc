@@ -86,6 +86,9 @@ nnoremap tt :tab sp<CR> :exe("tjump ".expand('<cword>'))<CR>
 " [tags list] tag list を表示
 nnoremap tl :ts<CR>
 
+" mapping of esc key
+noremap <C-j> <esc>
+noremap! <C-j> <esc>
 
 " key setting for window and tabs
 nnoremap s <Nop>
