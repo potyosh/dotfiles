@@ -45,6 +45,7 @@ NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'kana/vim-submode'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'Shougo/neocomplcache'
+NeoBundle "ctrlpvim/ctrlp.vim"
 
 " Color settings
 NeoBundle 'altercation/vim-colors-solarized'
