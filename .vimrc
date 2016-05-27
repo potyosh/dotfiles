@@ -45,6 +45,7 @@ NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'kana/vim-submode'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'Shougo/neocomplcache'
+NeoBundle "ctrlpvim/ctrlp.vim"
 
 " Color settings
 NeoBundle 'altercation/vim-colors-solarized'
@@ -78,6 +79,7 @@ let g:syntastic_check_on_wq = 0
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 
+" Key remapping----------------------------
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 
 " [tag jump] カーソルの単語の定義先にジャンプ（複数候補はリスト表示）
@@ -101,6 +103,9 @@ nnoremap tt :tab sp<CR> :exe("tjump ".expand('<cword>'))<CR>
 " [tags list] tag list を表示
 nnoremap tl :ts<CR>
 
+" mapping of esc key
+noremap <C-j> <esc>
+noremap! <C-j> <esc>
 
 " key setting for window and tabs
 nnoremap s <Nop>
@@ -139,7 +144,10 @@ call submode#map('bufmove', 'n', '', '<', '<C-w><')
 call submode#map('bufmove', 'n', '', '+', '<C-w>+')
 call submode#map('bufmove', 'n', '', '-', '<C-w>-')
 
-"" neocomplcache
+" End key remapping----------------------------
+
+"" neocomplcache-------------------------------
+
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
 " " Use neocomplcache.
@@ -173,4 +181,4 @@ inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
 inoremap <expr><C-y>  neocomplcache#close_popup()
 inoremap <expr><C-e>  neocomplcache#cancel_popup()
 
-"" end neocomplecache
+"" End neocomplcache-------------------------------
