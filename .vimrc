@@ -79,6 +79,7 @@ let g:syntastic_check_on_wq = 0
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 
+" Key remapping----------------------------
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 
 " [tag jump] カーソルの単語の定義先にジャンプ（複数候補はリスト表示）
@@ -143,7 +144,9 @@ call submode#map('bufmove', 'n', '', '<', '<C-w><')
 call submode#map('bufmove', 'n', '', '+', '<C-w>+')
 call submode#map('bufmove', 'n', '', '-', '<C-w>-')
 
-"" neocomplcache
+" End key remapping----------------------------
+
+"" neocomplcache-------------------------------
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
 " " Use neocomplcache.
@@ -177,4 +180,5 @@ inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
 inoremap <expr><C-y>  neocomplcache#close_popup()
 inoremap <expr><C-e>  neocomplcache#cancel_popup()
 
-"" end neocomplecache
+"" End neocomplcache-------------------------------
+
