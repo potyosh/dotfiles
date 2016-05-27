@@ -147,7 +147,6 @@ call submode#map('bufmove', 'n', '', '-', '<C-w>-')
 " End key remapping----------------------------
 
 "" neocomplcache-------------------------------
-
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
 " " Use neocomplcache.
@@ -182,3 +181,9 @@ inoremap <expr><C-y>  neocomplcache#close_popup()
 inoremap <expr><C-e>  neocomplcache#cancel_popup()
 
 "" End neocomplcache-------------------------------
+
+" Status line----------------
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+set laststatus=2
+" End status line------------
+
